@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="reset.css">
   <title>Sign-up Form</title>
+  <script src="script.js"></script>
 </head>
 <body>
   <div class="left-side">
@@ -20,32 +21,32 @@
   <div class="right-side">
       <p class="bold-p">This is not a real online service! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis aliquam ut porttitor leo a diam. Nisl nisi scelerisque eu ultrices vitae auctor eu augue. Mi bibendum neque egestas congue quisque egestas diam in. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Potenti nullam ac tortor vitae.<br><br><br>Sign up today.</p>
       <div class="container">
-        <form>
+        <form onsubmit="return validate(this)">
             <legend>Let's do this!</legend>
             <div class="user-details">
               <div class="input">
                 <label for="first-name">FIRST NAME</label>
-                <input type="text" name="first-name" id="first-name">
+                <input type="text" name="first-name" id="first-name" placeholder="Carl" minlength="2" required>
               </div>
               <div class="input">
                 <label for="last-name">LAST NAME</label>
-                <input type="text" name="last-name" id="last-name">
+                <input type="text" name="last-name" id="last-name" placeholder="Johnson" minlength="2" required>
               </div>
               <div class="input">
                 <label for="mail">EMAIL</label>
-                <input type="email" name="mail" id="mail">
+                <input type="email" name="mail" id="mail" placeholder="email@example.com" required>
               </div>
               <div class="input">
                 <label for="phone">PHONE NUMBER</label>
-                <input type="number" name="phone" id="phone">
+                <input type="number" name="phone" id="phone" placeholder="+1 111 1111" required>
               </div>
               <div class="input">
                 <label for="pwd">PASSWORD</label>
-                <input type="password" name="pwd" id="pwd">
+                <input type="password" name="pwd" id="pwd" placeholder="*****" required>
               </div>
               <div class="input">
                 <label for="Cpwd">CONFIRM PASSWORD</label>
-                <input type="password" name="Cpwd" id="Cpwd">
+                <input type="password" name="Cpwd" id="Cpwd" placeholder="*****" required>
               </div>
             </div>
           <input type="submit" value="Create Account" class="create-button">
