@@ -4,10 +4,8 @@ function validate(form) {
 
   if (password != confirmPassword) {
     alert("Error! Password did not match.");
-    confirmPassword.classList.add("error");
     return false;
   } else {
-    alert("Password Match. Congratulations!");
     return true;
   }
 }
